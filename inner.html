@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<main lang="ru">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
@@ -15,7 +15,7 @@
   </form>
   <ul>
     <li><a href="#">Закладки: <span>0</span></a></li>
-    <li><a href="#"></a>Корзина: <span>10</span></li></body>
+    <li><a href="#"></a>Корзина: <span>10</span></li>
     <li><a href="#"></a>Оформить заказ</a></li>
   </ul>
 </div>
@@ -31,11 +31,11 @@
       <button type="button">+7 (812) 555-05-55</button><br>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </li>
-    <li><button type="button">Войти</li>
-    <li><button type="button">Регистрация</li>
-  </p>
+    <li><button type="button">Войти</button></li>
+    <li><button type="button">Регистрация</button></li>
   </ul>
-</div>>
+</div>
+
 <nav class="main-menu">
   <ul>
     <li><a href="main.html">Главная</a></li>
@@ -52,7 +52,7 @@
 
   <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
-        <li<a href="catalog.html">Каталог</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
         <li><a href="tool.html">Инструмент</a></li>
         <li class="breadcrumbs-current">Перфораторы</li>
   </ul>
@@ -61,8 +61,6 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!-- Здесь будет форма -->
     </section>
-
-    <section></section>
 
 <section class="catalog">
     <h2 class="visually-hidden">Список перфораторов</h2>
@@ -75,18 +73,15 @@
             </a>
         </h3>
    <p>
-     <a href="catalog-item"><img src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+     <a href="catalog-item">
+       <img src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
      </a>
    </p>
 
-    <p>
-      <ul>
-         <li><s>22 500 ₽</s></li>
-         <li>
-            <button type="button">15 500 ₽</button>
-         </li>
-      </ul>
-     </p>
+   <p>
+      <s>22 500 ₽</s>
+      <button type="button">15 500 ₽</button>
+    </p>
     </li>
 
     <li>
@@ -98,47 +93,38 @@
         </h3>
 
     <p>
-      <a href="catalog-item"><img src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+      <a href="catalog-item">
+        <img src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
       </a>
     </p>
     
     <p>
-     <ul>
-        <li><s>30 500 ₽</s></li>
-        <li>
+      <s>30 500 ₽</s>
           <button type="button">25 500 ₽</button>
-        </li>
-     </ul>
     </p>
     </li>
         
-   <li>
+  <li>
        <h3>
-           <ul>
-         <li class="item-current"><a href="catalog-item.html">
+         <p>
+           <a href="catalog-item.html">
              <span>Перфоратор BOSCH</span>
              <span>BFG 2000</span>
-            </a>
-         </li>
-           </ul>
+           </a>
+          </p>
        </h3>
+
     <p>
-     <ul>
-        <li>
-          <button type="button">Купить<button>
-        </li>
-        <li>
-          <button type="button">В закладки<button>
-        </li>
-     </ul>
+          <button type="button">Купить</button>
+          <button><button type="button">В закладки</button>
     </p>
-    </li>
 
     <p>
       <button type="button">12 500 ₽</button>
     </p>
+  </li>
 
-    <li>
+  <li>
         <h3>
             <a href="catalog-item.html">
                 <span>Перфоратор BOSCH</span>
@@ -146,19 +132,16 @@
             </a>
         </h3>
    <p>
-     <a href="catalog-item"><img src="img/product-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+     <a href="catalog-item">
+       <img src="img/product-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
      </a>
    </p>
 
    <p>
-     <ul>
-        <li><s>22 500 ₽</s></li>
-        <li>
-            <button type="button">15 500 ₽</button>
-        </li>
-     </ul>
+     <s>22 500 ₽</s>
+     <button type="button">15 500 ₽</button>
     </p>
-    </li>
+  </li>
 
     <li>
         <h3>
@@ -168,17 +151,14 @@
             </a>
         </h3>
    <p>
-     <a href="catalog-item"><img src="img/product-5.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+     <a href="catalog-item">
+       <img src="img/product-5.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
      </a>
    </p>
 
-    <p>
-      <ul>
-         <li><s>30 500 ₽</s></li>
-         <li>
-            <button type="button">25 500 ₽</button>
-         </li>
-      </ul>
+     <p>
+      <s>30 500 ₽</s>
+      <button type="button">25 500 ₽</button>
      </p>
     </li>
 
@@ -190,16 +170,13 @@
             </a>
         </h3>
    <p>
-     <a href="catalog-item"><img src="img/product-6.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+     <a href="catalog-item">
+       <img src="img/product-6.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
      </a>
    </p>
 
-    <p>
-      <ul>
-         <li>
-            <button type="button">12 500 ₽</button>
-         </li>
-      </ul>
+     <p>
+      <button type="button">12 500 ₽</button>
      </p>
     </li>
 
@@ -211,18 +188,15 @@
             </a>
         </h3>
    <p>
-     <a href="catalog-item"><img src="img/product-7.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+     <a href="catalog-item">
+       <img src="img/product-7.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
      </a>
    </p>
 
    <p>
-     <ul>
-        <li><s>22 500 ₽</s></li>
-        <li>
-            <button type="button">15 500 ₽</button>
-        </li>
-     </ul>
-    </p>
+      <s>22 500 ₽</s>
+        <button type="button">15 500 ₽</button>
+   </p>
     </li>
 
     <li>
@@ -233,17 +207,14 @@
             </a>
         </h3>
    <p>
-     <a href="catalog-item"><img src="img/product-8.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+     <a href="catalog-item">
+       <img src="img/product-8.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
      </a>
    </p>
 
     <p>
-      <ul>
-         <li><s>30 500 ₽</s></li>
-         <li>
-            <button type="button">25 500 ₽</button>
-         </li>
-      </ul>
+      <s>30 500 ₽</s>
+          <button type="button">25 500 ₽</button>
      </p>
     </li>
 
@@ -255,16 +226,13 @@
             </a>
         </h3>
    <p>
-     <a href="catalog-item"><img src="img/product-9.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+     <a href="catalog-item">
+       <img src="img/product-9.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
      </a>
    </p>
 
-    <p>
-      <ul>
-         <li>
-            <button type="button">12 500 ₽</button>
-         </li>
-      </ul>
+     <p>
+      <button type="button">12 500 ₽</button>
      </p>
     </li>
 </ul>

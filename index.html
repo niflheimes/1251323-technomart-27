@@ -52,6 +52,11 @@
 <main>
  <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
 <!--здесь будет контент-->
+
+<section>
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1yOT6r7_N7neJxKh3Mx7Tao_1eNGIwPie" width="940" height="446"></iframe>
+</section>
+
 <section>
   <h2>Компания «Техномарт»</h2>
   <ul>
@@ -89,18 +94,18 @@
     <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть всплывающее окно">
     <div class="half-width" class="half-width">
       <label for="name">Ваше имя:</label>
-      <input type="text" name="name" placeholder="Имя Фамилия">
+      <input type="text" name="name" id="name" placeholder="Имя Фамилия">
     </div>
     <div class="half-width">
-      <label label for="email">Ваш e-mail:</label>
-      <input type="text" name="email" placeholder="email@example.com">
+      <label for="email">Ваш e-mail:</label>
+      <input type="text" name="email" id="email" placeholder="email@example.com">
     </div>
     <div class="half-width output-area">
     </div>
       <label for="mail">Текст письма:</label>
-      <input type="text" name="name" placeholder="В свободной форме">
+      <input type="text" name="mail" id="mail" placeholder="В свободной форме">
     <div class="buttons">
-      <input type="submit" value="Отправить">
+      <button type="submit">Отправить</button>
     </div>
   </fieldset>
 </form>

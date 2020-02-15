@@ -1,0 +1,116 @@
+body {
+margin: 0;
+padding:0;
+
+font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+font-size: 13px;
+line-height: 23px;
+font-weight: 400;
+color: #000000;
+text-transform: initial;
+
+background-color: #ffffff;
+background-image: url("img/bg.jpg");
+background-position: top center;
+background-repeat: no-repeat;
+}
+
+a {
+text-decoration: none;
+}
+
+.text-about-shop,
+.header-contacts {
+list-style: none;
+}
+
+.text-about-shop {
+font-size: 16px;
+line-height: 23px;
+color: #ee3643;
+
+background-color: #f4f7f9;
+}
+
+.header-contacts {
+font-size: 14px;
+line-height: 24px;
+color: #32425c;
+
+background-color: #f4f7f9;
+}
+
+.inner-page {
+color: #ffffff
+background-image: url("img/pattern-light.jpg");
+background-position: 0 0;
+background-repeat: repeat;
+}
+.page-title {
+font-size: 30px;
+line-height: 30px;
+
+}
+
+.site-navigation {
+list-style: none;
+}
+
+.main-menu {
+font-size: 17px;
+line-height: 17px;
+color: #ffffff;
+
+background-color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+background-color: #ca2c37;
+}
+.site-navigation a {
+  color: #ffffff;
+}
+
+.contacts-title {
+font-size: 30px;
+line-height: 30px;
+color: #000000;
+}
+
+.contacts {
+font-size: 13px;
+line-height: 24px;
+color: #000000;
+    
+background-color:#ffffff;   
+}
+
+.feature-text,
+.transport-item{
+list-style: none; 
+}
+
+.feature-text{
+font-size: 13px;
+line-height: 24px;
+color: #000000;
+        
+background-color:#ffffff;  
+}
+
+.transport-item {
+font-size: 18px;
+line-height: 20px;
+color: #000000;
+        
+background-color:#ffffff;
+}
+
+.footer-navigation,
+.footer-contacts,
+.footer-catalog,
+.footer-copyright,
+.footer-social,
+.footer-feedback {
+list-style: none;   
+}

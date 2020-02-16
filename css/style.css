@@ -106,6 +106,8 @@ color: #000000;
 background-color:#ffffff;
 }
 
+
+/* я не поняла, почему нельзя написать просто .page-footer*/
 .footer-navigation,
 .footer-contacts,
 .footer-catalog,

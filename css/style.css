@@ -221,7 +221,7 @@ font-family: 'Cuprum', 'Arial', sans-serif;
 .footer-feedback,
 .footer-info,
 .footer-copyright,
-.footer-social{
+.footer-social {
 background-color: #293449;
 font-family: 'Cuprum', 'Arial', sans-serif;
 }
@@ -230,12 +230,14 @@ font-family: 'Cuprum', 'Arial', sans-serif;
   text-align: center;
   color: #212a3a;
 }
-.footer-copyright a:hover,
-.footer-copyright a:focus {
-color: #ffd180;
+
+.footer-copyright p {
+  color: #ffd180;
 }
 
+.footer-copyright a:hover,
+.footer-copyright a:focus,
 .footer-feedback a:hover,
 .footer-feedback a:focus {
-color: #ffd180;
+color: #ee3643;
 }

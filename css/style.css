@@ -230,12 +230,12 @@ font-family: 'Cuprum', 'Arial', sans-serif;
   text-align: center;
   color: #212a3a;
 }
-.footer-copyright button:hover,
-.footer-copyright button:focus {
+.footer-copyright a:hover,
+.footer-copyright a:focus {
 color: #ffd180;
 }
 
 .footer-feedback a:hover,
 .footer-feedback a:focus {
-  color: #ffd180;
+color: #ffd180;
 }

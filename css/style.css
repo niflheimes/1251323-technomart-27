@@ -235,6 +235,11 @@ font-family: 'Cuprum', 'Arial', sans-serif;
   color: #ffd180;
 }
 
+.footer-copyright a,
+.footer-feedback a {
+  color: #ffd180;
+}
+
 .footer-copyright a:hover,
 .footer-copyright a:focus,
 .footer-feedback a:hover,

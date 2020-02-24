@@ -1,248 +1,318 @@
 body {
-min-width: 960px;
-margin: 0;
-padding: 0;
-
-font-family: "Cuprum", "PT Sans", Arial, sans-serif;
-font-size: 13px;
-line-height: 23px;
-font-weight: 400;
-color: #000000;
-text-transform: initial;
-
-background-color: #f4f7f9;
-}
-
-.button {
-  font: inherit;
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
   
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
- 
-  background-color: #ee3643;
-  border: none;
- }
-
- .button:hover,
- .button:focus,
- .button:active {
-   background-color: #ca2c37;
- }
-
-a {
-text-decoration: none;
-}
-
-.main-header {
-  background-color: #293449;
-  font-family: 'Cuprum', 'Arial', sans-serif;
-}
-
-.logo {
-  width: 220px;
-  padding: 11px 0 7px 0;
-  font-size: 17px;
-    line-height: 18px;
-    font-weight: 400;
-}
-
-.text-about-shop,
-.header-contacts {
-list-style: none;
-}
-
-.text-about-shop {
-font-size: 16px;
-line-height: 23px;
-color: #ee3643;
-
-background-color: #f4f7f9;
-}
-
-.header-contacts {
-padding: 10px 0 10px 0;
-font-size: 14px;
-line-height: 24px;
-color: #32425c;
-padding: 0;
-
-background-color: #f4f7f9;
-}
-
-.inner-page {
-color: #ffffff;
-background-image: url("img/pattern-light.jpg");
-background-position: 0 0;
-background-repeat: repeat;
-
-}
-.page-title {
-font-size: 30px;
-line-height: 30px;
-padding: 0;
-margin: 0;
-vertical-align: middle;
-font-family: "Cuprum", "Arial", sans-serif;
-font-weight: 400;
-text-transform: uppercase;
-}
-
-.breadcrumbs {
-  list-style: none;
-}
-
-.breadcrumbs a,
-.breadcrumbs-current {
+  font-family: "Cuprum", "PT Sans", Arial, sans-serif;
   color: #000000;
-}
-.breadcrumbs a:hover,
-.breadcrumbs a:focus {
-  color:#ca2c37;
-}
-
-.filter fieldset {
-  border: none;
-}
-
-.filter legend {
+  line-height: 17px;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: initial;
+  
+  background-color: #f4f7f9;
+  }
+  
+  .button {
+    font: inherit;
+    
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+   
+    background-color: #ee3643;
+    border: none;
+   }
+  
+   .button:hover,
+   .button:focus {
+   background-color: #ca2c37;
+   }
+   .button:active {
+    background-color: #ba2732;
+   }
+  
+  a {
+  text-decoration: none;
+  }
+  
+  .main-header {
+    background-color: #293449;
+    font-family: "Cuprum", "Arial", sans-serif;
+  }
+  
+  .image-logo {
+    background-color: #ee3643;
+    width: 220px;
+    height: 47px;
+    padding: 13px 55px 15px 56px;
+    margin-left: 130px;
+    margin-right: 850px;
+    text-align: center;
+  }
+  .bookmark-cart a,
+  .current-log,
+  .out-log,
+  .orders,
+  .profile {
+  color: #ffffff;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
+  line-height: 18px;
+  
+  }
+  
+  .log {
+    width: 121px;
+    height: 45px;
+    position: relative;
+    color: #000000;
+    padding: 0 10px;
+    border: 3px solid white;
+    white-space: nowrap;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    color: #ee3643;
+  
+  background-color: #ffffff;
+  }
+  
+  .image-logo:hover,
+  .image-logo:focus {
+  background-color: #ba2732;
+  }
+  
+  .reg {
+    width: 150x;
+    height: 45px;
+    position: relative;
+    color: #000000;
+    padding: 0 10px;
+    border: 3px solid white;
+    white-space: nowrap;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    color: #ee3643;
+  
+  background-color: #ffffff;
+  }
+  
+  .text-about-shop,
+  .header-contacts {
+  list-style: none;
+  }
+  
+  .text-about-shop {
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+  }
+  
+  .phone-number {
+    width: 100%;
+    position: relative;
+    padding: 5px 35px;
+    border: 3px solid white;
+    white-space: nowrap;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    color: #ee3643;
+    background-color: #f4f7f9;
+  }
+  
+  .header-contacts {
+  padding: 10px 0 10px 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+  padding: 0;
+  
+  background-color: #f4f7f9;
+  }
+  
+  .inner-page {
+  color: #ffffff;
+  background-image: url("img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  
+  }
+  .page-title {
+  font-size: 30px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  }
+  
+  .breadcrumbs {
+    list-style: none;
+  }
+  
+  .breadcrumbs a,
+  .breadcrumbs-current {
+    color: #000000;
+  }
+  .breadcrumbs a:hover,
+  .breadcrumbs a:focus {
+    background-color:#ca2c37;
+  }
+  
+  .filter fieldset {
+    border: none;
+  }
+  
+  .filter legend {
+    font-size: 17px;
+    line-height: 30px;
+    color: #000000;
+  }
+  .filter-option,
+  .filter-product {
+  list-style: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 15;
+  line-height: 20;
+  color: #000000;
+  
+  }
+  
+  .items-catalog {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #32425c;
+    background-color: #f2f6f8;
+  }
+  
+  .no-bullets {
+  list-style: none;
+  }
+  
+  .main-menu {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  
+  background-color: #32425c;
+  }
+  .site-navigation a:hover,
+  .site-navigation a:focus,
+  .bookmark-cart a:hover,
+  .bookmark-cart a:focus,
+  .footer-navigation a:hover,
+  .footer-navigation a:focus,
+  .footer-catalog a:hover,
+  .footer-catalog a:focus{
+  
+  background-color: #293449;
+  }
+  .site-navigation a {
+    color: #ffffff;
+  }
+  
+  .contacts-title {
+  font-size: 30px;
   line-height: 30px;
   color: #000000;
-}
-.filter-option,
-.filter-product {
-list-style: none;
-font-family: "PT Sans", "Arial", sans-serif;
-font-size: 15;
-line-height: 20;
-color: #000000;
-
-}
-
-.items-catalog {
-  font-size: 30px;
-  line-height: 30;
-  color: #32425c;
-  background-color: #f2f6f8;
-}
-
-.no-bullets {
-list-style: none;
-}
-
-.main-menu {
-font-size: 17px;
-line-height: 17px;
-color: #ffffff;
-font-family: 'Cuprum', 'Arial', sans-serif;
-
-background-color: #32425c;
-}
-.site-navigation a:hover,
-.site-navigation a:focus,
-.bookmark-cart a:hover,
-.bookmark-cart a:focus,
-.footer-navigation a:hover,
-.footer-navigation a:focus,
-.footer-catalog a:hover,
-.footer-catalog a:focus{
-
-background-color: #ca2c37;
-}
-.site-navigation a {
+  }
+  
+  .contacts {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+      
+  background-color:#ffffff;   
+  }
+  
+  .info-about-company,
+  .map {
+    background-color: #ffffff;
+  }
+  
+  .feature-text,
+  .transport-item{
+  list-style: none; 
+  }
+  
+  .feature-text{
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+          
+  background-color:#ffffff;  
+  }
+  
+  .transport-item {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-weight: 400;
+  color: #000000;
+          
+  background-color:#ffffff;
+  }
+  
+  .site-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-weight: 400;
   color: #ffffff;
-}
-
-.contacts-title {
-font-size: 30px;
-line-height: 30px;
-color: #000000;
-}
-
-.contacts {
-font-size: 13px;
-line-height: 24px;
-color: #000000;
-    
-background-color:#ffffff;   
-}
-
-.info-about-company,
-.map {
-  background-color: #ffffff;
-}
-
-.feature-text,
-.transport-item{
-list-style: none; 
-}
-
-.feature-text{
-font-size: 13px;
-line-height: 24px;
-color: #000000;
-        
-background-color:#ffffff;  
-}
-
-.transport-item {
-font-size: 18px;
-line-height: 20px;
-font-family: 'Cuprum', 'Arial', sans-serif;
-font-weight: 400;
-color: #000000;
-        
-background-color:#ffffff;
-}
-
-.site-navigation {
-font-size: 17px;
-line-height: 17px;
-font-family: 'Cuprum', 'Arial', sans-serif;
-font-weight: 400;
-color: #ffffff;
-background-color: #32425c;
-}
-
-.site-navigation a,
-.no-bullets a,
-.page-footer a {
-color: #ffffff;
-}
-
-.footer-nav,
-.footer {
-background-color: #32425c;
-font-family: 'Cuprum', 'Arial', sans-serif;
-}
-
-.footer-feedback,
-.footer-info,
-.footer-copyright,
-.footer-social {
-background-color: #293449;
-font-family: 'Cuprum', 'Arial', sans-serif;
-}
-
-.social-button {
+  background-color: #32425c;
+  }
+  
+  .site-navigation a,
+  .page-footer a {
+  color: #ffffff;
+  }
+  
+  .footer-logo {
+  background-color: #ee3643;
+  width: 220px;
+  height: 68px;
+  padding: 25px 41px 20px 41px;
+  margin-left: 130px;
+  margin-right: 850px;
   text-align: center;
-  color: #212a3a;
-}
-
-.footer-copyright p {
-  color: #ffd180;
-}
-
-.footer-copyright a,
-.footer-feedback a {
-  color: #ffd180;
-}
-
-.footer-copyright a:hover,
-.footer-copyright a:focus,
-.footer-feedback a:hover,
-.footer-feedback a:focus {
-color: #ee3643;
-}
+  }
+  
+  .footer-nav {
+  background-color: #32425c;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  }
+  
+  .container {
+  background-color: #293449;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  }
+  
+  .social-button {
+    text-align: center;
+    color: #212a3a;
+  }
+  
+  .footer-copyright p {
+    color: #ffd180;
+  }
+  
+  .footer-copyright a,
+  
+  .footer-feedback a {
+    color: #ffd180;
+  }
+  
+  .footer-copyright a:hover,
+  .footer-copyright a:focus,
+  .footer-feedback a:hover,
+  .footer-feedback a:focus {
+  color: #ee3643;
+  }

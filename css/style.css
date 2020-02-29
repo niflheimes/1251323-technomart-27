@@ -29,6 +29,7 @@ body {
    .button:focus {
    background-color: #ca2c37;
    }
+
    .button:active {
     background-color: #ba2732;
    }
@@ -51,6 +52,7 @@ body {
     margin-right: 850px;
     text-align: center;
   }
+
   .bookmark-cart a,
   .current-log,
   .out-log,
@@ -66,7 +68,6 @@ body {
   .log {
     width: 121px;
     height: 45px;
-    position: relative;
     color: #000000;
     padding: 0 10px;
     border: 3px solid white;
@@ -81,13 +82,16 @@ body {
   
   .image-logo:hover,
   .image-logo:focus {
-  background-color: #ba2732;
+  background-color: #ca2c37;
   }
   
+  .image-logo:active {
+    background-color: #ba2732;
+  }
+
   .reg {
     width: 150x;
     height: 45px;
-    position: relative;
     color: #000000;
     padding: 0 10px;
     border: 3px solid white;
@@ -95,8 +99,6 @@ body {
     font-size: 21px;
     line-height: 21px;
     text-align: center;
-    color: #ee3643;
-  
   background-color: #ffffff;
   }
   
@@ -178,12 +180,22 @@ body {
   .filter-product {
   list-style: none;
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 15;
-  line-height: 20;
+  font-size: 15px;
+  line-height: 17px;
   color: #000000;
-  
   }
   
+  .filter-input:hover + label,
+  .filter-input:focus + label {
+    color: #663d15;
+  }
+  
+  .filter-input:disabled + label {
+    color: #000000;
+  
+    opacity: 0.5;
+  }
+
   .items-catalog {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
@@ -206,15 +218,20 @@ body {
   }
   .site-navigation a:hover,
   .site-navigation a:focus,
-  .bookmark-cart a:hover,
-  .bookmark-cart a:focus,
   .footer-navigation a:hover,
   .footer-navigation a:focus,
   .footer-catalog a:hover,
-  .footer-catalog a:focus{
+  .footer-catalog a:focus {
   
   background-color: #293449;
   }
+
+  .bookmark-cart a:hover,
+  .bookmark-cart a:focus {
+    background-color: #161d29;
+  }
+
+
   .site-navigation a {
     color: #ffffff;
   }
@@ -223,6 +240,8 @@ body {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
+  font-weight: normal;
   }
   
   .contacts {
@@ -295,11 +314,16 @@ body {
   font-family: 'Cuprum', 'Arial', sans-serif;
   }
   
-  .social-button {
+  .social-button{
     text-align: center;
     color: #212a3a;
   }
   
+  .social-button:hover,
+  .social-button:focus {
+  background-color: #ca2c37;
+  }
+
   .footer-copyright p {
     color: #ffd180;
   }
@@ -310,9 +334,5 @@ body {
     color: #ffd180;
   }
   
-  .footer-copyright a:hover,
-  .footer-copyright a:focus,
-  .footer-feedback a:hover,
-  .footer-feedback a:focus {
-  color: #ee3643;
-  }
+
+

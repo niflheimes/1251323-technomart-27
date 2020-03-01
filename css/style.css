@@ -6,89 +6,171 @@ body {
   font-family: "Cuprum", "PT Sans", Arial, sans-serif;
   color: #000000;
   line-height: 17px;
-  font-size: 13px;
-  font-weight: 400;
-  text-transform: initial;
-  
-  background-color: #f4f7f9;
-  }
-  
-  .button {
-    font: inherit;
-    
-    text-align: center;
-    color: #ffffff;
-    vertical-align: middle;
-    text-transform: uppercase;
-   
-    background-color: #ee3643;
-    border: none;
-   }
-  
-   .button:hover,
-   .button:focus {
-   background-color: #ca2c37;
-   }
-
-   .button:active {
-    background-color: #ba2732;
-   }
-  
-  a {
-  text-decoration: none;
-  }
-  
-  .main-header {
-    background-color: #293449;
-    font-family: "Cuprum", "Arial", sans-serif;
-  }
-  
-  .image-logo {
-    background-color: #ee3643;
-    width: 220px;
-    height: 47px;
-    padding: 13px 55px 15px 56px;
-    margin-left: 130px;
-    margin-right: 850px;
-    text-align: center;
-  }
-
-  .search-form {
-    background-color: #293449;
-  }
-
-  .bookmark-cart a {
-  color: #ffffff;
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
-  line-height: 18px;
   font-weight: normal;
-  }
-
-  .cart {
-  background-color: #ee3643;
-    width: 150px;
-    height: 42px;
-    margin-left: 130px;
-    margin-right: 850px;
-    text-align: center;
-  }
+  background-color: #f4f7f9;
+}
   
+h1 {
+margin: 0;
+font-family: "Cuprum", Arial, sans-serif;
+font-size: 30px;
+line-height: normal;
+color: #000;
+}
 
-  .register {
-    background-color: #63a63e;
-      width: 150px;
-      height: 42px;
-      margin-left: 130px;
-      margin-right: 850px;
-      text-align: center;
-    }
-  }
+.button {
+font: inherit;
+text-align: center;
+color: #ffffff;
+vertical-align: middle;
+text-transform: uppercase;
+background-color: #ee3643;
+border: none;
+}
+  
+.button:hover,
+.button:focus {
+background-color: #ca2c37;
+}
 
-  .current-log {
-  color: #000000;
-  font-size: 21px;
-  }
+.button:active {
+background-color: #ba2732;
+}
+ 
+a {
+text-decoration: none;
+color: #ffffff;
+cursor: pointer;
+}
+
+.main-header {
+
+background-color: #293449;
+font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.main-header-logo {
+position: relative;
+float: left;
+width: 220px;
+height: 42px;
+box-sizing: border-box;
+padding: 10px 20px;
+text-align: center;
+background-color: #ee3643;
+}
+  
+.main-header-logo::after {
+position: absolute;
+left: 0;
+bottom: -5px;
+content: "";
+display: block;
+height: 5px;
+width: 100%;
+border-top: 1px solid #bf2d38;
+background-color:#b52933;
+}
+
+.main-header-logo:hover {
+background-color: #ca2c37;
+}
+.main-header-logo:hover::after {
+background-color: #9a212a;
+}
+.main-header-logo:active {
+background-color: #ba2732;
+}
+.main-header-logo:active::after {
+background-color: #8e1e26;
+}
+
+
+.bookmark-cart a {
+color: #ffffff;
+font-family: "Cuprum", "Arial", sans-serif;
+font-size: 17px;
+line-height: 18px;
+font-weight: normal;
+}
+
+.bookmark {
+text-decoration: none;
+position: relative;
+float: left;
+background-color: #293449;
+}
+
+.bookmark:hover {
+background-color: #212a3a;
+}
+
+.bookmark:active {
+background-color: #161d29;
+color: #a2a5a9;
+}
+
+.bookmark:hover {
+color: #ffffff;
+}
+
+.bookmark:active {
+color: #8b8e94;
+}
+
+.bookmark-value {
+padding-left: 5px;
+}
+
+.cart {
+background-color: #ee3643;
+position: relative;
+float: left;
+text-decoration: none;
+}
+
+.cart:hover {
+background-color: #212a3a;
+}
+.cart:active {
+background-color: #161d29;
+color: #a2a5a9;
+}
+.cart:hover {
+color: #ffffff;
+}
+.cart:active {
+color: #8b8e94;
+}
+.cart-active {
+background-color: #ee3643;
+}
+.cart-active{
+color: #f3737c;
+}
+.cart-value {
+padding-left: 5px;
+}
+
+.register {
+float: left;
+text-decoration: none;
+background-color: #63a63e;
+}
+
+.register:hover {
+background-color: #5fbb2d;
+}
+.register:active {
+background-color: #518534;
+
+}
+
+.current-log {
+color: #000000;
+font-size: 21px;
+}
 
   .orders,
   .profile {
@@ -126,14 +208,6 @@ color: #ee3643;
 color: #ee3643;
 }
 
-  .image-logo:hover,
-  .image-logo:focus {
-  background-color: #ca2c37;
-  }
-  
-  .image-logo:active {
-    background-color: #ba2732;
-  }
 
   .reg {
     width: 150x;
@@ -281,6 +355,7 @@ color: #ee3643;
   }
   
   .main-menu {
+  display: flex;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -309,6 +384,8 @@ color: #ee3643;
   }
   
   .contacts-title {
+  margin: 0;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   color: #000000;
@@ -316,6 +393,10 @@ color: #ee3643;
   font-weight: normal;
   }
   
+  p {
+  margin: 0;
+  }
+
   .contacts {
   font-size: 13px;
   line-height: 24px;
@@ -432,3 +513,26 @@ color: #ee3643;
   .popup {
   display:none; 
   }
+
+  .footer-logo {
+    position: relative;
+    float: left;
+    width: 220px;
+    height: 68px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #ee3643;
+    }
+
+    .footer-logo::after {
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      content: "";
+      display: block;
+      height: 5px;
+      width: 100%;
+      border-top: 1px solid #bf2d38;
+      background-color:#b52933;
+      }

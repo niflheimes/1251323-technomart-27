@@ -429,5 +429,6 @@ color: #ee3643;
     color: #ffd180;
   }
   
-
-
+  .popup {
+  display:none; 
+  }

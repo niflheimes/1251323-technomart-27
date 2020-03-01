@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normilize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -21,8 +21,8 @@
       </form>
       <ul class="bookmark-cart no-bullets">
         <li><a href=""><img src="img/icon-bookmark.svg" width="14" height="16" alt="">Закладки:<span>0</span></a></li>
-        <li><a href=""><img src="img/icon-cart.svg" width="15" height="15" alt="">Корзина:<span>10</span></a></li>
-        <li><a href="">Оформить заказ</a></li>
+        <li class="cart"><a href=""><img src="img/icon-cart.svg" width="15" height="15" alt="">Корзина:<span>10</span></a></li>
+        <li class="register"><a href="">Оформить заказ</a></li>
       </ul>
     </div>
 
@@ -113,8 +113,8 @@
 
 <section class="catalog">
     <h2 class="visually-hidden">Список перфораторов</h2>
-<ul>
-    <li>
+<ul class="catalog-list">
+    <li class="catalog-item">
         <h3>
             <a href="catalog-item.html">
                 <span>Перфоратор BOSCH</span>
@@ -127,13 +127,13 @@
      </a>
    </p>
 
-   <p>
+   <p class="catalog-item-price">
       <s>22 500 ₽</s>
       <button type="button"><img src="" width="141" height="38" alt="Купить">15 500 ₽</button>
     </p>
     </li>
 
-    <li>
+    <li class="catalog-item">
         <h3>
             <a href="catalog-item.html">
                 <span>Перфоратор BOSCH</span>
@@ -147,13 +147,13 @@
       </a>
     </p>
     
-    <p>
+    <p class="catalog-item-price">
       <s>30 500 ₽</s>
           <button type="button"><img src="" width="141" height="38" alt="Купить">25 500 ₽</button>
     </p>
     </li>
         
-  <li>
+  <li class="catalog-item">
        <h3>
            <a href="catalog-item.html">
              <span>Перфоратор BOSCH</span>
@@ -166,12 +166,12 @@
           <button type="button">В закладки</button>
     </p>
 
-    <p>
+    <p class="catalog-item-price">
       <button type="button"><img src="" width="141" height="38" alt="Купить">12 500 ₽</button>
     </p>
   </li>
 
-  <li>
+  <li class="catalog-item">
         <h3>
             <a href="catalog-item.html">
                 <span>Перфоратор BOSCH</span>
@@ -184,13 +184,13 @@
      </a>
    </p>
 
-   <p>
+   <p class="catalog-item-price">
      <s>22 500 ₽</s>
      <button type="button"><img src="" width="141" height="38" alt="Купить">15 500 ₽</button>
     </p>
   </li>
 
-    <li>
+    <li class="catalog-item">
         <h3>
             <a href="catalog-item.html">
                 <span>Перфоратор BOSCH</span>
@@ -203,13 +203,13 @@
      </a>
    </p>
 
-     <p>
+     <p class="catalog-item-price">
       <s>30 500 ₽</s>
       <button type="button"><img src="" width="141" height="38" alt="Купить">25 500 ₽</button>
      </p>
     </li>
 
-    <li>
+    <li class="catalog-item">
         <h3>
             <a href="catalog-item.html">
                 <span>Перфоратор BOSCH</span>
@@ -222,12 +222,12 @@
      </a>
    </p>
 
-     <p>
+     <p class="catalog-item-price">
       <button type="button"><img src="" width="141" height="38" alt="Купить">12 500 ₽</button>
      </p>
     </li>
 
-    <li>
+    <li class="catalog-item">
         <h3>
             <a href="catalog-item.html">
                 <span>Перфоратор BOSCH</span>
@@ -240,13 +240,13 @@
      </a>
    </p>
 
-   <p>
+   <p class="catalog-item-price">
       <s>22 500 ₽</s>
         <button type="button"><img src="" width="141" height="38" alt="Купить">15 500 ₽</button>
    </p>
     </li>
 
-    <li>
+    <li class="catalog-item">
         <h3>
             <a href="catalog-item.html">
                 <span>Перфоратор BOSCH</span>
@@ -259,13 +259,13 @@
      </a>
    </p>
 
-    <p>
+    <p class="catalog-item-price"> 
       <s>30 500 ₽</s>
           <button type="button"><img src="" width="141" height="38" alt="Купить">25 500 ₽</button>
      </p>
     </li>
 
-    <li>
+    <li class="catalog-item">
         <h3>
             <a href="catalog-item.html">
                 <span>Перфоратор BOSCH</span>
@@ -278,18 +278,18 @@
      </a>
    </p>
 
-     <p>
+     <p class="catalog-item-price">
       <button type="button"><img src="" width="141" height="38" alt="Купить">12 500 ₽</button>
      </p>
     </li>
 </ul>
+<ul class="pagination-list">
+  <li class="pagination-item pagination-item-current"><a>1</a></li>
+  <li class="pagination-item"><a href="#">2</a></li>
+  <li class="pagination-item"><a href="#">3</a></li>
+  <li class="pagination-item"><a href="#">4</a></li>
+</ul>
 </section>
-<section>
-  <p><img src="img/icon-mark.svg" width="66" height="66" alt="Товар добавлен в корзину">Товар добавлен в корзину!</p>
-    <button type="button">Оформить заказ</button>
-    <button type="button">Продолжить покупки</button>
-</section>
-</main>
 
 
 <footer class="page-footer">
@@ -332,6 +332,13 @@
     </div>
   </div>
 </footer>
+
+<section>
+  <p><img src="img/icon-mark.svg" width="66" height="66" alt="Товар добавлен в корзину">Товар добавлен в корзину!</p>
+    <button type="button">Оформить заказ</button>
+    <button type="button">Продолжить покупки</button>
+</section>
+</main>
 
    </body>
   </html>

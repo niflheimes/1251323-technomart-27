@@ -342,13 +342,14 @@ color: #ee3643;
   0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
-  .items-catalog {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    color: #32425c;
-    background-color: #f2f6f8;
-  }
+.items-catalog {
+font-family: "Cuprum", "Arial", sans-serif;
+font-size: 30px;
+font-weight: normal;
+color: #32425c;
+background-color: #f2f6f8;
+text-transform: uppercase;
+}
   
   .no-bullets {
   list-style: none;
@@ -359,7 +360,7 @@ color: #ee3643;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   
   background-color: #32425c;
   }
@@ -371,6 +372,10 @@ color: #ee3643;
   .footer-catalog a:focus {
   
   background-color: #293449;
+  }
+
+  .promo a {
+  color: #ffd180;
   }
 
   .bookmark-cart a:hover,
@@ -392,10 +397,6 @@ color: #ee3643;
   text-transform: uppercase;
   font-weight: normal;
   }
-  
-  p {
-  margin: 0;
-  }
 
   .contacts {
   font-size: 13px;
@@ -415,7 +416,7 @@ color: #ee3643;
   list-style: none; 
   }
   
-  .feature-text{
+  .feature-text {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -426,7 +427,7 @@ color: #ee3643;
   .transport-item {
   font-size: 18px;
   line-height: 20px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   color: #000000;
           
@@ -436,7 +437,7 @@ color: #ee3643;
   .site-navigation {
   font-size: 17px;
   line-height: 17px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   color: #ffffff;
   background-color: #32425c;
@@ -448,27 +449,9 @@ color: #ee3643;
 
   }
   
-  .site-navigation a,
-  .page-footer a {
+  .site-navigation a {
   color: #ffffff;
   }
-
-
-.pagination-list {
-  list-style: none;
-}
-  
-.pagination-item a {
-  color: #ffffff;
-}
-
-.pagination-item-current a:hover,
-.pagination-item-current a:focus {
-
-}
-.pagination-item-current a:active {
-  background-color: #ee3643;
-}
 
   .footer-logo {
   background-color: #ee3643;
@@ -482,23 +465,41 @@ color: #ee3643;
   
   .footer-nav {
   background-color: #32425c;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   }
   
   .container {
   background-color: #293449;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   }
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  }  
   
-  .social-button{
-    text-align: center;
-    color: #212a3a;
-  }
   
-  .social-button:hover,
-  .social-button:focus {
-  background-color: #ca2c37;
-  }
+.social-btn {
+display: block;
+width: 40px;
+height: 40px;
+background-color: #212a3a;
+border-radius: 50%;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.social-btn:hover,
+.social-btn:focus,
+.social-btn:active {
+background-color: #ca2c37;
+}
 
   .footer-copyright p {
     color: #ffd180;

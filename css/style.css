@@ -183,13 +183,15 @@ background-color: #8e1e26;
 
   opacity: 0.3;
 }
-  .link-icon:hover::before,
-  .link-icon:focus::before {
-      opacity: 1;
-  }
-  .link-icon:active::before {
-      opacity: 0.5;
-  }
+
+.link-icon:hover::before,
+.link-icon:focus::before {
+opacity: 1;
+}
+
+.link-icon:active::before {
+opacity: 0.5;
+}
 
 .top-nav-link {
 display: block;
@@ -725,11 +727,42 @@ margin-bottom: 18px;
 }
 
 .section-title {
+font-family: "Cuprum", sans-serif;
 font-size: 30px;
+color: #32425c;
 line-height: 30px;
-font-weight: 400;
+font-weight: normal;
 text-transform: uppercase;
 margin: 0;
+}
+
+.popular-manufacturers-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.popular-manufacturers-list li {
+margin: 0 20px 20px 0;
+}
+
+.popular-manufacturers-list li:nth-child(4n) {
+margin-right: 0;
+}
+
+.popular-manufacturers-item {
+display: flex;
+align-items: center;
+color: #000000;
+justify-content: center;
+width: 218px;
+min-height: 143px;
+border: 1px solid #eaeaea;
+flex-shrink: 0;
+outline: none;
 }
 
 .button-all-products {

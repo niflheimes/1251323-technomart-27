@@ -77,7 +77,7 @@ font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .user-block {
-	display: flex;
+	display: inline;
 	justify-content: space-between;
 	width: 280px;
 	height: 45px;
@@ -94,7 +94,7 @@ font-family: "Cuprum", "Arial", sans-serif;
 
 .user-block .log {
 	width: 73px;
-	padding-left: 48px;
+	    padding: 5px 25px;
 	text-decoration: none;
 	font-size: 21px;
 	line-height: 45px;
@@ -131,7 +131,7 @@ color: rgba(0, 0, 0, 0.3);
 
 .centering-wrap {
 width: 940px;
-padding: 0 130px;
+padding: 0 153px 90px 130px;
 margin: 0 auto;
 }
 
@@ -245,6 +245,10 @@ color: rgba(255, 255, 255, 0.6);
 position: relative;
 }
 
+.bookmark img {
+margin-right: 13px;
+}
+
 .bookmark::before {
 width: 14px;
 height: 16px;
@@ -276,6 +280,10 @@ background-color: #ee3643;
 position: relative;
 float: left;
 text-decoration: none;
+}
+
+.cart img {
+  margin-right: 13px;
 }
 
 .cart:hover {
@@ -320,7 +328,7 @@ text-decoration: underline;
 width: 121px;
 height: 45px;
 color: #000000;
-padding: 0 10px;
+padding: 5px 10px;
 border: 3px solid white;
 white-space: nowrap;
 font-size: 21px;
@@ -330,6 +338,9 @@ text-align: center;
 background-color: #ffffff;
 }
   
+.log img {
+margin-right: 10px;
+}
 
 .log:hover,
 .log:focus {
@@ -346,7 +357,8 @@ color: #ee3643;
 width: 150x;
 height: 45px;
 color: #000000;
-padding: 0 10px;
+padding: 5px 10px;
+margin-left: 5px;
 border: 3px solid white;
 white-space: nowrap;
 font-size: 21px;
@@ -365,18 +377,20 @@ font-size: 16px;
 line-height: 23px;
 color: #ee3643;
 width: 196px;
-padding: 5px 5px 0 52px;
+padding: 0 5px 0 52px;
 margin: 0;
-margin-right: 71px;
-margin-left: auto;
 font-family: "Cuprum", sans-serif;
 font-style: italic;
 font-weight: 400;
 }
-  
+.text-about-shop p {
+  margin: 0;
+}
   
 .phone-number {
-width: 100%;
+box-sizing: border-box;
+display: inline-block;
+width: fit-content;
 position: relative;
 padding: 5px 35px;
 border: 3px solid white;
@@ -390,10 +404,11 @@ background-color: #f4f7f9;
 
 .address {
 color: #32425c;
+margin: 10px 0 0 0;
 }
 
 .search-form .search-label {
-position: relative;
+  position: relative;
 }
 
 .search-form {
@@ -414,7 +429,13 @@ background-color: #212a3a;
 }
 
 .search-form .label-search {
-position: relative;
+  position: relative;
+}
+
+.search-form img {
+  position: absolute;
+  top: 0;
+  left: 19px;
 }
 
 .search-form .field {
@@ -565,17 +586,21 @@ font-family: "Cuprum", sans-serif;
 font-size: 14px;
 line-height: 18px;
 font-weight: 400;
-color: #fff;
+color: #ffffff;
 text-align: center;
 text-decoration: none;
 text-transform: uppercase;
-
 display: inline-block;
 min-width: 135px;
 padding: 10px 23px;
 background-color: rgba(0, 0, 0, 0.1);
 border-radius: 3px;
 box-sizing: border-box;
+}
+
+.promo-block-item-button img {
+  position: relative;
+  left: 35px;
 }
 
 .promo-block-item-button:hover,
@@ -1307,7 +1332,7 @@ border-left-color: #ba2732;
   
 .inner-page {
 color: #ffffff;
-background-image: url("img/light-pattern.jpg");
+background-image: url("../img/light-pattern.jpg");
 background-position: 0 0;
 background-repeat: repeat;
   
@@ -1612,7 +1637,7 @@ opacity: 0.5;
 
 .footer-nav-list {
 display: flex;
-align-items: center;
+align-items: flex-start;
 justify-content: flex-end;
 flex-wrap: wrap;
 margin: 0;

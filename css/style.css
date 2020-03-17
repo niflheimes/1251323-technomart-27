@@ -955,12 +955,15 @@ background-position: right 22px;
 .services-slider-item.guarantee {
 background-image: url("../img/guarantee.png");
 }
+
 .services-slider-item.credit {
 background-image: url("../img/credit.png");
 }
+
 .services-slider-item.current-slide {
 display: block;
 }
+
 .service-text-block {
 width: 400px;
 }
@@ -1050,6 +1053,7 @@ margin-bottom: 20px;
 .transport-item:last-child {
 margin-bottom: 35px;
 }
+
 .transport-item::before {
 position: absolute;
 top: 50%;
@@ -1065,6 +1069,7 @@ background-color: #ee3643;
 padding: 8px 45px;
 outline: none;
 }
+
 .more-about-company:hover,
 .more-about-company:focus {
 background-color: #ca2c37;
@@ -1111,8 +1116,6 @@ background-color: #ca2c37;
 .write-us-button:active {
 background-color: #ba2732;
 }
-
-
 
 .button-all-products {
 font-size: 14px;
@@ -1687,16 +1690,29 @@ background-color: #293449;
 font-family: "Cuprum", "Arial", sans-serif;
 }
 
+.container .centering-wrap {
+display: flex;
+align-items: center;
+}
+
 .footer-social {
 display: flex;
 align-items: center;
 justify-content: center;
-margin: 0;
 width: 200px;
+margin: 0;
 margin-left: auto;
 margin-right: auto;
-padding: 10px;
+padding: 0;
+list-style: none;
 }  
+
+.footer-social li {
+  margin-right: 6px;
+} 
+.footer-social li:last-of-type {
+  margin-right: 0;
+} 
   
 .footer-social img {
 margin: -2px 0 0 0;
@@ -1707,10 +1723,15 @@ position: absolute;
 display: block;
 width: 40px;
 height: 40px;
-border-radius: 50%;
 background-color: #212a3a;
-background-position: center;
+border-radius: 50%;
+background-position: center center;
 background-repeat: no-repeat;
+outline: none;
+}
+
+.social-btn:last-of-type {
+  margin-right: 0;
 }
 
 .social-btn:hover,
@@ -1730,30 +1751,274 @@ padding: 37px 0;
 color: #ffd180;
 }
 
+.footer-feedback,
+.footer-copyright {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 300px;
+font-size: 16px;
+line-height: 18px;
+font-weight: 400;
+color: #ffffff;
+}
   
 .popup {
 display:none; 
 }
 
 .footer-logo {
-  position: relative;
-  float: left;
-  width: 220px;
-  height: 68px;
-  box-sizing: border-box;
-  padding: 20px 20px;
-  text-align: center;
-  background-color: #ee3643;
-  }
+position: relative;
+float: left;
+width: 220px;
+height: 68px;
+box-sizing: border-box;
+padding: 20px 20px;
+text-align: center;
+background-color: #ee3643;
+}
   
-  .footer-logo::after {
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  content: "";
-  display: block;
-  height: 5px;
-  width: 100%;
-  border-top: 1px solid #bf2d38;
-  background-color:#b52933;
-  }
+.footer-logo::after {
+position: absolute;
+left: 0;
+bottom: -5px;
+content: "";
+display: block;
+height: 5px;
+width: 100%;
+border-top: 1px solid #bf2d38;
+background-color:#b52933;
+}
+
+.feedback-form-wrap {
+position: fixed;
+top: 0;
+left: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-feedback {
+position: relative;
+width: 620px;
+min-height: 430px;
+border-top: 7px solid #ff5358;
+background-color: #fff;
+padding: 47px 80px;
+box-sizing: border-box;
+z-index: 10;
+}
+
+.feedback-form {
+display: flex;
+flex-wrap: wrap;
+}
+
+.form-label {
+display: flex;
+flex-direction: column;
+font-size: 18px;
+line-height: 18px;
+font-weight: 400;
+color: #000;
+margin-bottom: 15px;
+}
+
+.form-label:first-child {
+margin-right: 20px;
+}
+
+.form-label.half-width {
+width: 220px;
+}
+
+.form-label:last-of-type {
+margin-bottom: 20px;
+}
+
+.form-field {
+font-family: "PT Sans", sans-serif;
+font-size: 13px;
+line-height: 18px;
+font-weight: 400;
+margin-top: 10px;
+padding: 8px 15px;
+margin-bottom: 15px;
+border: 2px solid #dee3e4;
+border-radius: 3px;
+box-sizing: border-box;
+outline: none;
+}
+
+.form-field:hover {
+border-color: #b5b5b5;
+}
+
+.form-field:focus {
+border-color: #ee3643;
+}
+
+.form-field::-webkit-input-placeholder {
+font-family: "PT Sans", sans-serif;
+font-size: 13px;
+line-height: 18px;
+color: #a9a9a9;
+}
+
+.form-field::-moz-placeholder {
+font-family: "PT Sans", sans-serif;
+font-size: 13px;
+line-height: 18px;
+color: #a9a9a9;
+}
+
+.form-field:-moz-placeholder {
+font-family: "PT Sans", sans-serif;
+font-size: 13px;
+line-height: 18px;
+color: #a9a9a9;
+}
+
+.form-field:-ms-input-placeholder {
+font-family: "PT Sans", sans-serif;
+font-size: 13px;
+line-height: 18px;
+color: #a9a9a9;
+}
+
+.submit-buttons {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+
+padding: 36px 80px;
+background-color: #f4f4f4;
+box-sizing: border-box;
+}
+
+.submit-form {
+font-family: "Cuprum", sans-serif;
+font-size: 14px;
+line-height: 18px;
+font-weight: 400;
+color: #ffffff;
+background-color: #ee3643;
+text-transform: uppercase;
+width: 100%;
+padding: 10px;
+outline: none;
+}
+
+.submit-form:hover,
+.submit-form:focus {
+background-color: #ca2c37;
+}
+
+.submit-form:active {
+background-color: #ba2732;
+}
+
+.close-form {
+position: absolute;
+right: 10px;
+top: 10px;
+width: 21px;
+height: 21px;
+background-color: transparent;
+border: none;
+}
+
+.close-form::before,
+.close-form::after {
+content: "";
+position: absolute;
+top: -3px;
+right: 8px;
+width: 4px;
+height: 28px;
+border-radius: 10px;
+background-color: #ee3643;
+}
+
+.close-form::before {
+transform: rotate(45deg);
+}
+.close-form::after {
+transform: rotate(-45deg);
+}
+
+#map-popup {
+position: fixed;
+top: 50%;
+margin-top: -225px;
+left: 50%;
+margin-left: -470px;
+width: 940px;
+height: 450px;
+z-index: 10;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#map {
+position: absolute;
+width: 300px;
+height: 158px;
+z-index: 1;
+}
+
+.map-overlay {
+position: absolute;
+display: block;
+width: 100%;
+height: 100%;
+z-index: 2;
+cursor: pointer;
+}
+
+.close-map-popup {
+position: absolute;
+right: 10px;
+top: 10px;
+width: 21px;
+height: 21px;
+background-color: transparent;
+border: none;
+z-index: 11;
+}
+
+.close-map-popup::before,
+.close-map-popup::after {
+content: "";
+position: absolute;
+top: -3px;
+right: 8px;
+width: 4px;
+height: 28px;
+border-radius: 10px;
+background-color: #ee3643;
+}
+
+.close-map-popup::before {
+transform: rotate(45deg);
+}
+
+.close-map-popup::after {
+transform: rotate(-45deg);
+}
+
+.close-map-popup:hover::before,
+.close-map-popup:focus::before,
+.close-map-popup:hover::after,
+.close-map-popup:focus::after {
+background-color: #ca2c37;
+}
+
+.close-map-popup:active::before,
+.close-map-popup:active::after {
+background-color: #ba2732;
+}

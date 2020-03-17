@@ -289,33 +289,34 @@
   </div>
 </footer>
 
-<section class="map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002912!2d30.320858715835012!3d59.938719169054494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sua!4v1581002528161!5m2!1sen!2sua" width="940" height="447" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-</section>
 
-<section class="feedback-form">
-  <form>
+<div id="map"><span class="map-overlay"></span></div>
+<div id="map-popup" class="visually-hidden">
+<button class="close-map-popup"></button>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002912!2d30.320858715835012!3d59.938719169054494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sua!4v1581002528161!5m2!1sen!2sua" width="940" height="447" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div> 
+
+<div class="feedback-form-wrap visually-hidden">
+  <section class="modal-feedback">
+  <form action="" class="feedback-form">
   <h2 class="visually-hidden contacts-title">Обратная связь</h2>
-  <fieldset>
-    <img src="img/icon-close.svg" width="21" height="21" alt="Закрыть всплывающее окно">
-    <div class="half-width" class="half-width">
-      <label for="name">Ваше имя:</label>
-      <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+  <label class="form-label half-width" for="name">Ваше имя:<input class="form-field" type="text" name="name" id="name" placeholder="Имя Фамилия"></label>
+
+  <label class="form-label half-width" for="email">Ваш e-mail:<input class="form-field" type="text" name="email" id="email" placeholder="email@example.com"></label>
+
+      <label class="form-label" for="mail">Текст письма:</label>
+      <textarea class="form-field" cols="58" rows="5" name="message" placeholder="В свободной форме"></textarea></label>
+        
+      <div class="submit-buttons buttons">
+      <button class="submit-form" type="submit">Отправить</button>
     </div>
-    <div class="half-width">
-      <label for="email">Ваш e-mail:</label>
-      <input type="text" name="email" id="email" placeholder="email@example.com">
-    </div>
-    <div class="half-width output-area">
-    </div>
-      <label for="mail">Текст письма:</label>
-      <input type="text" name="mail" id="mail" placeholder="В свободной форме">
-    <div class="buttons">
-      <button type="submit">Отправить</button>
-    </div>
+    <button class="close-form" type="reset"><span class="visually-hidden">Закрыть форму</span></button>
   </fieldset>
 </form>
 </section>
+</div>
+
+
 </main>
 
   </body>

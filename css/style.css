@@ -241,7 +241,7 @@ margin: 0;
 position: relative;
 float: left;
 width: 220px;
-height: 42px;
+height: 45px;
 box-sizing: border-box;
 padding: 10px 20px;
 text-align: center;
@@ -866,6 +866,7 @@ margin-right: 0;
 .popular-products {
 margin-bottom: 20px;
 }
+
 
 .section-title-block {
 display: flex;
@@ -1691,22 +1692,17 @@ padding-top: 28px;
 }
 
 .footer-nav-list {
-display: flex;
-align-items: center;
-justify-content: flex-end;
-flex-wrap: wrap;
-margin: 0;
-padding: 0;
-margin-bottom: 14px;
-list-style: none;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
 }
 
-.footer-nav-list li {
+.category-nav-list li {
 margin-left: 59px;
 flex-shrink: 0;
 }
 
-.footer-nav-list li:first-child { 
+.category-nav-list li:first-child { 
 margin-left: 0;
 }
 
@@ -1732,9 +1728,9 @@ opacity: 0.5;
 
 .footer-nav-list {
 display: flex;
-align-items: flex-start;
+align-items: flex-end;
 justify-content: flex-end;
-flex-wrap: wrap;
+flex-wrap: nowrap;
 margin: 0;
 padding: 0;
 list-style: none;
@@ -1749,6 +1745,16 @@ flex-shrink: 0;
 margin-left: 0;
 }
 
+.category-nav-list {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+flex-wrap: wrap;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
 
 .footer-contacts {
 font-family: "Cuprum", sans-serif;
@@ -1759,11 +1765,6 @@ color: #f3f7f9;
 width: 350px;
 }
 
-.footer-logo {
-display: block;
-margin-bottom: 16px;
-font-size: 0;
-}
 
 .footer-address {
 margin: 0;
@@ -1786,6 +1787,9 @@ padding: 37px 0;
 .container .centering-wrap {
 display: flex;
 align-items: center;
+padding: 0;
+padding-left: 131px;
+padding-right: 145px;
 }
 
 .copyright {

@@ -1109,7 +1109,7 @@ background-color: #ba2732;
 display: flex;
 justify-content: space-between;
 align-items: flex-start;
-margin-bottom: 85px;
+margin: 0;
 }
 
 .about-company {
@@ -1190,10 +1190,6 @@ font-weight: 400;
 width: 300px;
 }
 
-.contacts, 
-.contacts-title {
-margin-bottom: 27px;
-}
 
 .contacts p {
 font-family: "PT Sans", sans-serif;
@@ -1206,9 +1202,14 @@ display: block;
 margin-bottom: 41px;
 }
 
+.maps-screen{
+margin: 0;
+}
+
 .write-us-button {
-padding: 7px 67px;
+padding: 5px 45px;
 outline: none;
+margin-top: 17px;
 }
 
 .write-us-button:hover,
@@ -1621,9 +1622,8 @@ color: #000000;
 background-color:#ffffff;   
 }
   
-.info-about-company,
-.map {
-background-color: #ffffff;
+.info-about-company {
+padding-right: 120px;
 }
   
 .feature-text,
@@ -1636,6 +1636,7 @@ font-size: 13px;
 line-height: 24px;
 color: #000000;
 background-color:#ffffff;  
+padding-left: 0;
 }
   
 .transport-item {

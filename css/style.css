@@ -562,12 +562,13 @@ color: #ffffff;
 }
 
 .promo-block {
-margin-bottom: 53px;
+padding-top: 60px;
 }
 
 .puk {
 background-color: #ffffff;
 margin: auto;
+background: center;
 }
 
 .promo-block-list {
@@ -578,6 +579,7 @@ flex-wrap: wrap;
 padding: 0;
 margin: 0;
 list-style: none;
+
 }
 
 .promo-block-item {
@@ -591,6 +593,8 @@ min-height: 123px;
 padding: 20px 23px;
 margin-bottom: 20px;
 box-sizing: border-box;
+width: 300px;
+height: 123px;
 }
 
 .promo-block-item::after {
@@ -683,6 +687,12 @@ margin: 0;
 margin-bottom: 14px;
 }
 
+.promo-block-item img {
+position: absolute;
+padding-left: 180px;
+padding-top: 15px;
+}
+
 .promo-block-item-button {
 font-family: "Cuprum", sans-serif;
 font-size: 14px;
@@ -698,12 +708,12 @@ padding: 10px 23px;
 background-color: rgba(0, 0, 0, 0.1);
 border-radius: 3px;
 box-sizing: border-box;
+width: 135px;
+height: 38px;
+opacity: 1;
+white-space: nowrap;
 }
 
-.promo-block-item-button img {
-  position: relative;
-  left: 35px;
-}
 
 .promo-block-item-button:hover,
 .promo-block-item-button:focus {
@@ -864,7 +874,7 @@ margin-right: 0;
 }
 
 .popular-products {
-margin-bottom: 20px;
+background-color: #fff;
 }
 
 
@@ -888,9 +898,9 @@ margin: 0;
 }
 
 .popular-manufacturers {
-margin-bottom: 64px;
-}
-
+ background-color: #fff;
+  }
+  
 .button-all-manufacturers {
 font-size: 14px;
 line-height: 18px;
@@ -953,7 +963,6 @@ opacity: 0.5;
 .services {
 padding-top: 65px;
 background-color: #f4f8f9;
-margin-bottom: 78px;
 }
 
 .services .section-title {
@@ -1110,6 +1119,8 @@ display: flex;
 justify-content: space-between;
 align-items: flex-start;
 margin: 0;
+background-color: #fff;
+padding-top: 78px;
 }
 
 .about-company {
@@ -1119,10 +1130,7 @@ font-weight: 400;
 width: 540px;
 }
 
-.about-company,
-.section-title {
-margin-bottom: 27px;
-}
+
 
 .about-company,
 .company-description {
